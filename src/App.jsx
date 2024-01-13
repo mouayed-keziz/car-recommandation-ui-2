@@ -4,7 +4,7 @@ import { useState } from "react";
 import Form from "./components/form";
 import Result from "./components/result"
 
-export default function App() {
+export default function App({ setTheme }) {
   const [model, setModel] = useState("");
   const [marque, setMarque] = useState("");
   const [couleur, setCouleur] = useState("black");
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <div className="container mx-auto">
-        <Navbar />
+        <Navbar setTheme={setTheme} />
       </div>
       <hr className="my-2" />
       <div className="h-16" />

@@ -2,7 +2,7 @@ export default function Result({ isLoading }) {
     return (
         <>
             <div className=" border rounded-md p-6">
-                <h3 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-100">
+                <h3 className="text-3xl font-bold text-center">
                     Result :
                 </h3>
                 <div className="h-16" />

@@ -1,7 +1,7 @@
 import { Car } from "lucide-react";
 import ThemeToggler from "./theme-toggle";
 
-export default function Navbar() {
+export default function Navbar({ setTheme }) {
     return (
         <>
             <nav className="flex justify-between items-center py-4">
@@ -9,7 +9,7 @@ export default function Navbar() {
                     <Car size="2rem" />
                     <span>CAR RECOMMENDATION SYSTEM</span>
                 </h1>
-                <ThemeToggler />
+                <ThemeToggler setTheme={setTheme} />
             </nav>
         </>
     );
